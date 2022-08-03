@@ -1,16 +1,18 @@
 import Project from './project';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import noteTaker from '../img/noteTaker.png';
-import nurseXpress from '../img/nurseXpress.png';
-import passwordGenerator from '../img/passwordGenerator.png';
-import quiz from '../img/quiz.png';
-import weatherDashboard from '../img/weatherDashboard.png';
-import wolfinance from '../img/wolfinance.png';
+import noteTaker from '../utils/img/noteTaker.png';
+import nurseXpress from '../utils/img/nurseXpress.png';
+import passwordGenerator from '../utils/img/passwordGenerator.png';
+import quiz from '../utils/img/quiz.png';
+import weatherDashboard from '../utils/img/weatherDashboard.png';
+import wolfinance from '../utils/img/wolfinance.png';
 
 function Portfolio() {
     return (
-      <Container>
+      <Container style={{
+        textAlign: 'justify'
+      }}>
         <h1>Portfolio</h1>
         <Row style={{
           justifyContent: 'center'
