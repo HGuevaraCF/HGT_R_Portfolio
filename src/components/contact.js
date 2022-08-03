@@ -1,20 +1,33 @@
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Form from 'react-bootstrap/Form';
+import Container from 'react-bootstrap/Container';
 
 function Contact() {
-    return (
-        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Contact</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-    )
+  return (
+    <Container>
+      <h1>Contact</h1>
+      <Form>
+        <Form.Group className="mb-3" controlId="formBasicName">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="input" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Text className="text-muted">
+            We'll never share your email with anyone else.
+          </Form.Text>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicMessage">
+          <Form.Label>Message</Form.Label>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
+    </Container>
+  )
 }
 
 export default Contact;

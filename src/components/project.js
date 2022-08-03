@@ -2,15 +2,13 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import { FaGithub } from 'react-icons/fa';
-import img from '../img/wolfinance.png';
 
-
-function Project() {
+function Project(props) {
     const [isShown, setIsShown] = useState(false);
     return (
         <Container onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)} style={{
-                backgroundImage: `url(${img})`,
+                backgroundImage: `url(${props.imgroute})`,
                 backgroundSize: 'cover',
                 borderRadius: '1rem',
                 margin: '1rem',
@@ -30,7 +28,7 @@ function Project() {
                 backgroundColor: 'rgba(255, 255, 255, 0.5)',
                 transition: 'opacity 1500ms'
             }}>
-                <p><a href='#' style={{ textDecoration: 'none', color: 'black' }}>Project name</a> | <a href='#'><FaGithub /></a></p>
+                <p><a href={props.route} target="_blank" style={{ textDecoration: 'none', color: 'black' }}>{props.name}</a> | <a href={props.repo} target="_blank"><FaGithub /></a></p>
             </div>
         </Container>
     )

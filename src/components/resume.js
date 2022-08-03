@@ -1,37 +1,41 @@
 
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
-import { FaGithub } from 'react-icons/fa';
-import img from '../img/wolfinance.png';
+import pdf from '../CV.pdf'
 
 
 function Resume() {
-    const [isShown, setIsShown] = useState(false);
     return (
-        <Container onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)} style={{
-                backgroundImage: `url(${img})`,
-                backgroundSize: 'cover',
-                borderRadius: '1rem',
-                margin: '1rem',
-                width: '18rem',
-                height: '10rem',
-                padding: '0px'
-
-            }}>
-            <div style={{
-                height: '100%',
-                width: '110%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                visibility: isShown ? 'visible' : 'hidden',
-                opacity: isShown ? '1' : '0',
-                backgroundColor: 'rgba(255, 255, 255, 0.5)',
-                transition: 'opacity 1500ms'
-            }}>
-                <p><a href='#' style={{ textDecoration: 'none', color: 'black' }}>Project name</a> | <a href='#'><FaGithub /></a></p>
-            </div>
+        <Container style={{
+            textAlign: 'justify'
+        }}>
+            <h1>Resume</h1>
+            <h2><a href={pdf} download="HGuevara_CV">Download Resume</a></h2>
+            <h3>Front end proficiencies</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Typescript</li>
+                <li>JQuery</li>
+                <li>Responsive design</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>Bootsrap</li>
+                <li>Tailwind</li>
+            </ul>
+            <h3>Back end proficiencies</h3>
+            <ul>
+                <li>PHP</li>
+                <li>APIs</li>
+                <li>Node</li>
+                <li>Nest</li>
+                <li>Express</li>
+                <li>MySQL, Sequalize</li>
+                <li>MongoDB, Mongoose</li>
+                <li>REST</li>
+                <li>GraphQL</li>
+            </ul>
         </Container>
     )
 }
