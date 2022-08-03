@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import { validateMail } from '../utils/helpers';
 import { useState } from 'react';
+import Alert from 'react-bootstrap/Alert';
 
 function Contact() {
   const [email, setEmail] = useState('');
@@ -100,7 +101,7 @@ function Contact() {
       </Form>
       {errorMessage && (
         <div>
-          <p>{errorMessage}</p>
+          <Alert key={'warning'} variant={'warning'}>{errorMessage}</Alert>
         </div>
       )}
     </Container>
