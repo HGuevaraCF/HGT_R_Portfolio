@@ -2,7 +2,7 @@
   "name": "hgt-r-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hguevaracf.github.io/hgt_r_portfolio/",
+  "homepage": "https://hguevaracf.github.io/HGT_R_Portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
