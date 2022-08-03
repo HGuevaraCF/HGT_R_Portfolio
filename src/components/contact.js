@@ -59,36 +59,34 @@ function Contact() {
       <h1>Contact</h1>
       <Form>
         <Form.Group className="mb-3" controlId="formBasicName">
-          <Form.Label>Name</Form.Label>
           <Form.Control
             value={name}
             type='input'
             name='name'
             onChange={handleChange}
-            placeholder='John Smith'
+            placeholder='Name'
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
           <Form.Control
             value={email}
             type='email'
             name='email'
             onChange={handleChange}
-            placeholder='Enter email'
+            placeholder='Email'
           />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicMessage">
-          <Form.Label>Message</Form.Label>
           <Form.Control
             as="textarea"
             value={message}
             rows={3}
             onChange={handleChange}
             name='message'
+            placeholder='Your message here...'
           />
         </Form.Group>
         <Button

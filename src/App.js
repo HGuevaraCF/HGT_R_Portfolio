@@ -11,13 +11,15 @@ import AboutMe from './components/about';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
 import Resume from './components/resume';
+import Footer from './components/footer';
+// import { AboutMe, Portfolio, Contact, Resume, Footer } from './components'
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar bg="light" expand="lg">
+      <Navbar className='navbar' expand="lg">
         <Container>
           <Navbar.Brand href="#home">Hector Guevara</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -40,6 +42,7 @@ function App() {
         </Routes>
       </div>
       </BrowserRouter>
+      <Footer/>
     </div>
   );
 }
