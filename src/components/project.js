@@ -15,7 +15,7 @@ function Project(props) {
                 opacity: isShown ? '1' : '0',
                 transition: 'opacity 1500ms'
             }}>
-                <p><a href={props.route} target="_blank" style={{ textDecoration: 'none', color: 'black' }}>{props.name}</a> | <a href={props.repo} target="_blank"><FaGithub /></a></p>
+                <p><a href={props.route} target="_blank" rel={'noreferrer'} style={{ textDecoration: 'none', color: 'black' }}>{props.name}</a> | <a href={props.repo} target="_blank" rel={'noreferrer'}><FaGithub /></a></p>
             </div>
         </Container>
     )

@@ -1,8 +1,6 @@
 
-import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import pdf from '../CV.pdf'
-
 
 function Resume() {
     return (

@@ -42,6 +42,8 @@ function Contact() {
         case (!message):
           setErrorMessage("Message is required.");
           return;
+        default:
+          break;
       }
     }
     alert(`Thaks for reaching me out. I'll contact you as soon as posible.`);
